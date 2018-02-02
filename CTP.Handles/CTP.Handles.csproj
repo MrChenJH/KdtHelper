@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KdtHelper.Common\KdtHelper.Common.csproj" />
+    <ProjectReference Include="..\KdtHelper\KdtHelper.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Flow\Handler\" />
+    <Folder Include="Flow\Query\" />
+    <Folder Include="Menu\Handler\" />
+    <Folder Include="Menu\Query\" />
+    <Folder Include="Template\Handler\" />
+    <Folder Include="Template\Query\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Executer\**" />
+    <EmbeddedResource Remove="Executer\**" />
+    <None Remove="Executer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Adapter\SyBaseClientAdapter.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Devart.Data.Oracle" Version="9.4.348" />
+    <PackageReference Include="Devart.Data.SQLite" Version="5.9.980" />
+    <PackageReference Include="IBM.EntityFrameworkCore" Version="1.1.1.101" />
+    <PackageReference Include="MSA.NetCore.ODBC" Version="1.0.3" />
+    <PackageReference Include="MySql.Data" Version="8.0.8-dmr" />
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KdtHelper.Common\KdtHelper.Common.csproj" />
+  </ItemGroup>
+
+</Project>
